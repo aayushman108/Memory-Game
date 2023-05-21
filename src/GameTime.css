@@ -1,0 +1,7 @@
+.time{
+    float: right;
+    position: relative;
+    top: -1em;
+    color: white;
+    font-size: 18px;
+}

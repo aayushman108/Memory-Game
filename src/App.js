@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import GamePlay from './GamePlay';
 
 function App() {
+  const [start, setStart]= React.useState(false);
+
+  function startGame(){
+    setStart(true)
+  }
+
+  function stopClicked(){
+    setStart(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="box">
+      <button onClick={startGame} className={`start-button ${start===true && "hide"}`}>Start game</button>
+      {start===true && 
+      <div className="min-box">
+        <GamePlay />
+        <button className="stop-button" onClick={stopClicked}>Stop game</button>
+      </div>}
     </div>
   );
 }
