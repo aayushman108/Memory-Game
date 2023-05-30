@@ -70,7 +70,7 @@ export default function GamePlay() {
 
     const arrangeItems= toUseItems.map((item)=>(
       <div className="container" onClick={(event)=>flip(event)}>
-        <div className="back-side">{item.name}</div>
+        <div className="back-side">{item.icons}</div>
         <div className="front-side" data-card-value={item.name}>?</div>
       </div>
     ))
@@ -81,7 +81,7 @@ export default function GamePlay() {
       <div className="main-container">
         {arrangeItems}
       </div>
-      {winCount===8 && <h3>Congratulations!!!</h3>}
+      {winCount===8 && <h3>Congratulations, You Won!!!</h3>}
     </div>
   )
 }
