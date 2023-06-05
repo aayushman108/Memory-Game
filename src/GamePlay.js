@@ -47,6 +47,7 @@ export default function GamePlay() {
               winCountt+=1;
               if (winCountt===8){
                 setWinCount(winCountt);
+
               }
             }else{
               let [tempFirst, tempSecond] = [firstCard1, secondCard1];
@@ -78,10 +79,10 @@ export default function GamePlay() {
   return (
     <div className="outer-container">
       <GameTime count={winCount}/>
-      <div className="main-container">
+      <div className={`main-container ${winCount===8 && 'hide'}`}>
         {arrangeItems}
       </div>
-      {winCount===8 && <h3>Congratulations, You Won!!!</h3>}
+      {winCount===8 && <h1>Congratulations, You Won!!!</h1>}
     </div>
   )
 }

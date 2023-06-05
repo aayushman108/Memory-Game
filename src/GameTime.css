@@ -5,3 +5,9 @@
     color: white;
     font-size: 18px;
 }
+.new-position{
+    position: relative;
+    left: 35%;
+    color: white;
+    font-size: 30px;
+}

@@ -19,7 +19,7 @@ function App() {
       {start===true && 
       <div className="min-box">
         <GamePlay />
-        <button className="stop-button" onClick={stopClicked}>Stop game</button>
+        <button className="stop-button" onClick={stopClicked} >New game</button>
       </div>}
     </div>
   );

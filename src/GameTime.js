@@ -24,7 +24,7 @@ function GameTime(props) {
 
   return (
     <div>
-      <div className= "time">
+      <div className= {`${props.count===8? "new-position" : "time"}`}>
         <p>Time: {min}:{sec}</p>
       </div>
     </div>

@@ -43,9 +43,15 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
-h3{
+h1{
     position: relative;
-    left: 25%;
+    left: 10%;
+    Color: rgb(2, 66, 2);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.hide{
+    display: none;
 }
 
 
