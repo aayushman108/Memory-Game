@@ -3,22 +3,21 @@
 }
 .start-button{
     padding: 0.6em 2em;
-    width:fit-content;
-    background-color: rgb(7, 7, 61);
+    background-color: black;
     color: whitesmoke;
     border: none;
-    border-radius: 5px;
+    font-size: 20px;
 }
 .stop-button{
     position: relative;
-    left: 40%;
+    left: 35%;
     top: 1em;
     padding: 0.6em 2em;
     width:fit-content;
-    background-color: rgb(7, 7, 61);
+    background-color: black;
     color: whitesmoke;
     border: none;
-    border-radius: 5px;
+    font-size: 20px;
 }
 .box{
     width: 70vw;
